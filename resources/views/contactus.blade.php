@@ -77,7 +77,7 @@
                             <i class="fa fa-phone me-3 mt-1"></i>
                             <div>
                                 <h5>Phone</h5>
-                                <p class="small">+92 300 1234567</p>
+                                <p class="small">+92 300 12345678910</p>
                             </div>
                         </div>
 
