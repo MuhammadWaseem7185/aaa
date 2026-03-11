@@ -18,7 +18,7 @@ class CartController extends Controller
 {
     $currency = session('user_currency');
 
-    if ($currency) {
+    if (!$currency) {
         $ip = request()->ip();
         $location = Location::get($ip == '127.0.0.1' ? '103.255.4.42' : $ip);
         $currency = $location ? match($location->countryCode) {
