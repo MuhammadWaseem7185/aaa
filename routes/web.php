@@ -106,7 +106,7 @@ Route::middleware(['auth', 'verified'])->group(function ()
     Route::get('/aboutus', [productController::class, 'aboutus'])->name('aboutus');
     Route::get('/learnmore', [productController::class, 'learnmore'])->name('learnmore');
     Route::get('/contactus', [productController::class, 'contactus'])->name('contactus');
-    Route::get('newarival',[productController::class,'newarival']);
+    Route::get('newarival',[productController::class,'newarival'])->name('newarival');
     Route::get('product',[productController::class, 'search'])->name('product');
     Route::post('contactus',[ContactUsController::class, 'contactusstore'])->name('contactusstore');
 

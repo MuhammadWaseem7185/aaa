@@ -270,10 +270,10 @@
                 <div class="col-lg-3 col-md-6 mb-4">
                     <h2 class="fw-bold text-dark fs-6 mb-3 text-uppercase">Categories</h2>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none hover-pink">Electronics</a></li>
-                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none hover-pink">Fashion</a></li>
-                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none hover-pink">Home & Decor</a></li>
-                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none hover-pink">Accessories</a></li>
+                        <li class="mb-2"><a href="{{ route('dashboard')}}" class="text-secondary text-decoration-none hover-pink">DASHBOARD</a></li>
+                        <li class="mb-2"><a href="#newarrivals-section" class="text-secondary text-decoration-none hover-pink">NEW ARRIVAL</a></li>
+                        <li class="mb-2"><a href="#about-section" class="text-secondary text-decoration-none hover-pink">ABOUT US</a></li>
+                        <li class="mb-2"><a href="#contact-section" class="text-secondary text-decoration-none hover-pink">CONTACT US</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
@@ -303,7 +303,7 @@
             </div>
         </div>
 
-        <div class="bg-light py-4 border-top">
+        <div class="bg-light py-4 border-top" style="border-radius:10px;">
             <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
                 <div class="d-flex align-items-center mb-3 mb-md-0">
                     <div class="bg-success rounded-circle p-2 d-inline-block">
@@ -313,7 +313,7 @@
                 </div>
                 <p class="small text-muted mb-0">© 2026 Shopping Mall — All Rights Reserved</p>
                 <div class="d-flex gap-3">
-                    <a href="#" class="text-secondary fs-5 hover-pink"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="www.instagram.com" class="text-secondary fs-5 hover-pink"><i class="fa-brands fa-facebook"></i></a>
                     <a href="#" class="text-secondary fs-5 hover-pink"><i class="fa-brands fa-twitter"></i></a>
                     <a href="#" class="text-secondary fs-5 hover-pink"><i class="fa-brands fa-instagram"></i></a>
                 </div>
@@ -348,7 +348,7 @@
         });
 
 
-        
+
         function addToCart(id) {
             fetch(`/cart/add/${id}`, {
                 method: 'POST',
