@@ -1,6 +1,9 @@
 <x-app-layout>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
 
     @php
         $currency = session('user_currency', 'USD');
@@ -201,139 +204,291 @@
     <div id="about-section">@include('aboutus')</div>
     <div id="contact-section">@include('contactus')</div>
 
-    <hr class="container">
-    <div class="container">
-<section class="py-5 bg-light"  style="border-radius:20px;">
-    <div class="container py-5">
-        <div class="text-center mb-5">
-            <h5 class="text-uppercase fw-bold" style="color: #f16179; letter-spacing: 2px;">Testimonials</h5>
-            <h2 class="fw-bold text-dark">What Our Shoppers Say</h2>
-        </div>
+ <section class="py-2 bg-light" style="border-radius:20px;">
+<div class="container py-5">
 
-        <div class="row g-4">
-            <div class="col-lg-4">
-                <div class="card h-100 border-0 shadow-sm text-center p-4 rounded-4">
-                    <div class="card-body">
-                        <img alt="shopper" class="rounded-circle mb-4 border border-3" 
-                             style="width: 80px; height: 80px; object-fit: cover; border-color: #f16179 !important;" 
-                             src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=150&auto=format&fit=crop">
-                        
-                        <p class="text-secondary mb-4 italic">"I'm consistently impressed by the incredible variety of stores here. It's my one-stop-shop for everything from high-end fashion to unique home decor. Navigating the mall is also a breeze!"</p>
-                        
-                        <span class="d-block mx-auto mb-3" style="height: 3px; width: 40px; background-color: #f16179; border-radius: 2px;"></span>
-                        <h6 class="fw-bold text-dark mb-1">SARAH J.</h6>
-                        <p class="small text-muted text-uppercase">Frequent Shopper</p>
-                    </div>
-                </div>
-            </div>
+<div class="text-center mb-5">
+<h5 class="text-uppercase fw-bold" style="color:#f16179; letter-spacing:2px;">Testimonials</h5>
+<h2 class="fw-bold text-dark">What Our Shoppers Say</h2>
+</div>
 
-            <div class="col-lg-4">
-                <div class="card h-100 border-0 shadow-sm text-center p-4 rounded-4">
-                    <div class="card-body">
-                        <img alt="shopper" class="rounded-circle mb-4 border border-3" 
-                             style="width: 80px; height: 80px; object-fit: cover; border-color: #f16179 !important;" 
-                             src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&auto=format&fit=crop">
-                        
-                        <p class="text-secondary mb-4">"The digital experience offered by this mall is outstanding! From checking store stock online to the efficient click-and-collect service, it makes shopping incredibly convenient for a busy professional like me."</p>
-                        
-                        <span class="d-block mx-auto mb-3" style="height: 3px; width: 40px; background-color: #f16179; border-radius: 2px;"></span>
-                        <h6 class="fw-bold text-dark mb-1">DAVID K.</h6>
-                        <p class="small text-muted text-uppercase">Digital Savvy Shopper</p>
-                    </div>
-                </div>
-            </div>
+<div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
 
-            <div class="col-lg-4">
-                <div class="card h-100 border-0 shadow-sm text-center p-4 rounded-4">
-                    <div class="card-body">
-                        <img alt="shopper" class="rounded-circle mb-4 border border-3" 
-                             style="width: 80px; height: 80px; object-fit: cover; border-color: #f16179 !important;" 
-                             src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150&auto=format&fit=crop">
-                        
-                        <p class="text-secondary mb-4">"This mall provides more than just shopping; it's a complete premium experience. The atmosphere is lovely, the dining options are top-tier, and the staff at every store are attentive and friendly."</p>
-                        
-                        <span class="d-block mx-auto mb-3" style="height: 3px; width: 40px; background-color: #f16179; border-radius: 2px;"></span>
-                        <h6 class="fw-bold text-dark mb-1">EMILY R.</h6>
-                        <p class="small text-muted text-uppercase">Lifestyle Enthusiast</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="carousel-inner">
+
+<!-- SLIDE 1 -->
+<div class="carousel-item active">
+<div class="row g-4">
+
+<div class="col-lg-4">
+<div class="card border-0 shadow-sm text-center p-4 rounded-4">
+<img class="rounded-circle mx-auto mb-4 border border-3"
+style="width:80px;height:80px;object-fit:cover;border-color:#f16179 !important;"
+src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=150">
+<p class="text-secondary mb-4">Great shopping experience. Amazing products!</p>
+<h6 class="fw-bold">SARAH J.</h6>
+</div>
+</div>
+
+<div class="col-lg-4">
+<div class="card border-0 shadow-sm text-center p-4 rounded-4">
+<img class="rounded-circle mx-auto mb-4 border border-3"
+style="width:80px;height:80px;object-fit:cover;border-color:#f16179 !important;"
+src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150">
+<p class="text-secondary mb-4">Online shopping here is super easy.</p>
+<h6 class="fw-bold">DAVID K.</h6>
+</div>
+</div>
+
+<div class="col-lg-4">
+<div class="card border-0 shadow-sm text-center p-4 rounded-4">
+<img class="rounded-circle mx-auto mb-4 border border-3"
+style="width:80px;height:80px;object-fit:cover;border-color:#f16179 !important;"
+src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150">
+<p class="text-secondary mb-4">Premium brands and wonderful service.</p>
+<h6 class="fw-bold">EMILY R.</h6>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- SLIDE 2 -->
+<div class="carousel-item">
+<div class="row g-4">
+
+<div class="col-lg-4">
+<div class="card border-0 shadow-sm text-center p-4 rounded-4">
+<img class="rounded-circle mx-auto mb-4 border border-3"
+style="width:80px;height:80px;object-fit:cover;border-color:#f16179 !important;"
+src="https://randomuser.me/api/portraits/men/32.jpg">
+<p class="text-secondary mb-4">Fast delivery and great quality.</p>
+<h6 class="fw-bold">JOHN D.</h6>
+</div>
+</div>
+
+<div class="col-lg-4">
+<div class="card border-0 shadow-sm text-center p-4 rounded-4">
+<img class="rounded-circle mx-auto mb-4 border border-3"
+style="width:80px;height:80px;object-fit:cover;border-color:#f16179 !important;"
+src="https://randomuser.me/api/portraits/women/44.jpg">
+<p class="text-secondary mb-4">Customer support is very helpful.</p>
+<h6 class="fw-bold">ANNA M.</h6>
+</div>
+</div>
+
+<div class="col-lg-4">
+<div class="card border-0 shadow-sm text-center p-4 rounded-4">
+<img class="rounded-circle mx-auto mb-4 border border-3"
+style="width:80px;height:80px;object-fit:cover;border-color:#f16179 !important;"
+src="https://randomuser.me/api/portraits/men/50.jpg">
+<p class="text-secondary mb-4">My favorite shopping website!</p>
+<h6 class="fw-bold">MICHAEL T.</h6>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<!-- BUTTONS -->
+<button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+
+<button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+
+</div>
+
+</div>
 </section>
-</div>
+
+
 <hr class="container">
-   <div class="container" >
-    <footer class="text-secondary bg-white border-top mt-5" style="border-radius:20px;">
-        <div class="container py-5" style="border-radius:10px;">
-            <div class="row text-center text-md-start">
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h2 class="fw-bold text-dark fs-6 mb-3 text-uppercase">Categories</h2>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="{{ route('dashboard')}}" class="text-secondary text-decoration-none hover-pink">DASHBOARD</a></li>
-                        <li class="mb-2"><a href="#newarrivals-section" class="text-secondary text-decoration-none hover-pink">NEW ARRIVAL</a></li>
-                        <li class="mb-2"><a href="#about-section" class="text-secondary text-decoration-none hover-pink">ABOUT US</a></li>
-                        <li class="mb-2"><a href="#contact-section" class="text-secondary text-decoration-none hover-pink">CONTACT US</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h2 class="fw-bold text-dark fs-6 mb-3 text-uppercase">Support</h2>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none hover-pink">Help Center</a></li>
-                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none hover-pink">Shipping Info</a></li>
-                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none hover-pink">Returns</a></li>
-                        <li class="mb-2"><a href="#contact-section" class="text-secondary text-decoration-none hover-pink">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h2 class="fw-bold text-dark fs-6 mb-3 text-uppercase">Legal</h2>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none hover-pink">Privacy Policy</a></li>
-                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none hover-pink">Terms of Service</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h2 class="fw-bold text-dark fs-6 mb-3 text-uppercase">Subscribe</h2>
-                    <div class="d-flex flex-column flex-sm-row gap-2">
-                        <input type="email" class="form-control bg-light" placeholder="Your Email">
-                        <button class="btn btn-success">Join</button>
-                    </div>
-                    <p class="small text-muted mt-3">Stay updated with our latest offers.</p>
-                </div>
-            </div>
-        </div>
 
-        <div class="bg-light py-4 border-top" style="border-radius:10px;">
-            <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
-                <div class="d-flex align-items-center mb-3 mb-md-0">
-                    <div class="bg-success rounded-circle p-2 d-inline-block">
-                        <svg width="20" height="20" fill="white" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
-                    </div>
-                    <span class="ms-3 fw-bold fs-5 text-dark">Shopping Mall</span>
-                </div>
-                <p class="small text-muted mb-0">© 2026 Shopping Mall — All Rights Reserved</p>
-                <div class="d-flex gap-3">
-                    <a href="www.instagram.com" class="text-secondary fs-5 hover-pink"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" class="text-secondary fs-5 hover-pink"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#" class="text-secondary fs-5 hover-pink"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <hr class="container" style="margin-top:0px;">
+<div class="container">
+<footer class="text-secondary bg-white border-top mt-5 rounded-4 shadow-sm">
 
+<div class="container py-5">
+<div class="row text-center text-md-start">
 
-    <button id="scrollTopBtn" title="Go to top" 
-            style="display:none; position: fixed; bottom: 40px; right: 30px; z-index: 9999;
-                   background-color: #f16179; color: white; border: none; 
-                   padding: 12px 18px; border-radius: 50px; font-size: 18px; cursor: pointer;
-                   box-shadow: 0 4px 8px rgba(0,0,0,0.2); transition: 0.3s;">
-        ↑ Top
-    </button>
+<!-- Categories -->
+<div class="col-lg-3 col-md-6 mb-4">
+<h2 class="fw-bold text-dark fs-6 mb-3 text-uppercase">Categories</h2>
+
+<ul class="list-unstyled">
+
+<li class="mb-2">
+<a href="{{ route('dashboard') }}" class="text-secondary text-decoration-none hover-pink">
+Dashboard
+</a>
+</li>
+
+<li class="mb-2">
+<a href="#newarrivals-section" class="text-secondary text-decoration-none hover-pink">
+New Arrival
+</a>
+</li>
+
+<li class="mb-2">
+<a href="#about-section" class="text-secondary text-decoration-none hover-pink">
+About Us
+</a>
+</li>
+
+<li class="mb-2">
+<a href="#contact-section" class="text-secondary text-decoration-none hover-pink">
+Contact Us
+</a>
+</li>
+
+</ul>
 </div>
+
+
+<!-- Support -->
+<div class="col-lg-3 col-md-6 mb-4">
+
+<h2 class="fw-bold text-dark fs-6 mb-3 text-uppercase">Support</h2>
+
+<ul class="list-unstyled">
+
+<li class="mb-2">
+<a href="tel:+9230012345678" class="text-secondary text-decoration-none hover-pink">
+📞 +92 300 12345678
+</a>
+</li>
+
+<li class="mb-2">
+<a href="mailto:support@yourwebsite.com" class="text-secondary text-decoration-none hover-pink">
+✉ support@yourwebsite.com
+</a>
+</li>
+
+<li class="mb-2">
+<a href="#" class="text-secondary text-decoration-none hover-pink">
+Returns & Refunds
+</a>
+</li>
+
+<li class="mb-2">
+<a href="#contact-section" class="text-secondary text-decoration-none hover-pink">
+Contact Support
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<!-- Legal -->
+<div class="col-lg-3 col-md-6 mb-4">
+
+<h2 class="fw-bold text-dark fs-6 mb-3 text-uppercase">Legal</h2>
+
+<ul class="list-unstyled">
+
+<li class="mb-2">
+<a href="#" class="text-secondary text-decoration-none hover-pink">
+Privacy Policy
+</a>
+</li>
+
+<li class="mb-2">
+<a href="#" class="text-secondary text-decoration-none hover-pink">
+Terms of Service
+</a>
+</li>
+
+<li class="mb-2">
+<a href="#" class="text-secondary text-decoration-none hover-pink">
+Cookies Policy
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<!-- Newsletter -->
+<div class="col-lg-3 col-md-6 mb-4">
+
+<h2 class="fw-bold text-dark fs-6 mb-3 text-uppercase">Subscribe</h2>
+
+<form>
+
+<div class="d-flex flex-column flex-sm-row gap-2">
+
+<input 
+type="email" 
+class="form-control bg-light" 
+placeholder="Your Email"
+required
+>
+
+<button class="btn btn-success">
+Join
+</button>
+
+</div>
+
+</form>
+
+<p class="small text-muted mt-3">
+Stay updated with our latest offers and products.
+</p>
+
+</div>
+
+</div>
+</div>
+
+
+
+<!-- Bottom Footer -->
+<div class="bg-light py-3 border-top mb-3">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+
+    <!-- Copyright -->
+    <p class="small text-muted mb-2 mb-md-0">
+      © {{ date('Y') }} Shopping Mall — All Rights Reserved
+    </p>
+
+    <!-- Social Links -->
+    <div class="d-flex gap-3">
+      <a href="https://www.facebook.com" target="_blank" rel="noopener" class="text-secondary hover-pink fs-5" aria-label="Facebook">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+
+      <a href="https://www.twitter.com" target="_blank" rel="noopener" class="text-secondary hover-pink fs-5" aria-label="Twitter">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+
+      <a href="https://www.instagram.com" target="_blank" rel="noopener" class="text-secondary hover-pink fs-5" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+</footer>
+</div>
+
+      
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+new bootstrap.Carousel(document.querySelector('#testimonialCarousel'), {
+interval: 4000,
+pause:false
+});
+
+
         const scrollTopBtn = document.getElementById("scrollTopBtn");
         window.onscroll = function() {
             if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
